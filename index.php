@@ -4,7 +4,7 @@
 
     require_once 'vendor/autoload.php';
 
-    $tweet = new Tweet('1', 'VOU ME TORNAR UM PROGRAMADOR COM CERTEZA');
+    $tweet = new Tweet('1', 'Porque usar -> ao invés do .?');
 
     $user = new User('1', 'Japostulo', 'João Apostulo Neto', 'japostulo@gmail.com');
 
