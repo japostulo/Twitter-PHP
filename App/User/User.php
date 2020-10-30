@@ -2,14 +2,11 @@
     namespace App\User;
 
     class User {
-        private $id, $username, $name, $email;
+        private $id, $username, $name, $email, $password, $image;
 
 
-        public function __construct($id,$username, $name, $email) {
-            $this->setId($id);
-            $this->setUsername($username);
-            $this->setName($name);
-            $this->setEmail($email);
+        public function __construct() {
+        
         }
 
         public function setId($id) {
@@ -44,6 +41,21 @@
             return $this->email;
         }
 
+        public function setPassword($password) {
+            $this->password = $password;
+        }
+        
+        public function getPassword() {
+            return $this->password;
+        }
+
+        public function setImage($image) {
+            $this->image = $image;
+        }
+        
+        public function getImage() {
+            return $this->image;
+        }
         public function print() {
             echo 'Username: ' .$this->username .'<br/> Name:' .$this->name .'<br/> E-mail: ' .$this->email;
         }
