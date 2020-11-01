@@ -1,12 +1,11 @@
 <?php
-    namespace App\Tweet;
+    namespace App\Post;
 
-    class Tweet {
-        private $id, $post;
+    class Post {
+        private $id, $post, $userId;
         
-        public function __construct($id, $post) {
-            $this->setId($id);
-            $this->setPost($post);
+        public function __construct() {
+
         }
 
         public function setId($id) {
@@ -25,9 +24,14 @@
             return $this->post;
         }
 
-        public function print() {
-            echo 'id: ' .$this->id .'<br/> post:' .$this->post .'<br/> ';
+        public function setUserId($userId) {
+            $this->userId = $userId;
         }
+        
+        public function getUserId() {
+            return $this->userId;
+        }
+
     }
 
 ?>
